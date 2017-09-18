@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Page</title>
+    <link rel="stylesheet" href="/home.css">
+  </head>
+  <body>
+  <h1><%= @team_name %><h1>
+    <% positions = @teams[:"#{@team_name}"].keys
+      positions.each do |position| %>
+        <li>
+          <%= "Name: " + @teams[:"#{@team_name}"][:"#{position}"] + ", Position: #{position}"
+        %></li>
+        <% end %>
+    <a href="/teams">Back to Teams</a>
+    <br>
+    <a href="/">Home</a>
+  <script src="/javascripts/app.js"></script>
+</body>
+</html>

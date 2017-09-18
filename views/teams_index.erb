@@ -1,0 +1,12 @@
+<body>
+  <h1>Teams<h1>
+    <% team_names = @teams.keys
+      team_names.each do |name| %>
+        <li>
+          <a href="/teams/<%= name %>">
+          <%= name %>
+        </a></li>
+    <% end %>
+    <a href="/">Home</a>
+  <script src="/javascripts/app.js"></script>
+</body>

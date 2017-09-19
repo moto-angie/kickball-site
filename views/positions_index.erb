@@ -1,5 +1,8 @@
 <body>
   <h1>Positions<h1>
+    <% TeamData::ROLL_CALL[:"Simpson Slammers"].keys.each do |key| %>
+    <h2><%= "#{key}" %></h2>
+    <% end %>
     <a href="/">Home</a>
   <script src="/javascripts/app.js"></script>
 </body>

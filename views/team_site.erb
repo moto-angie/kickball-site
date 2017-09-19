@@ -6,10 +6,10 @@
   </head>
   <body>
   <h1><%= @team_name %><h1>
-    <% positions = @teams[:"#{@team_name}"].keys
+    <% positions = TeamData::ROLL_CALL[:"#{@team_name}"].keys
       positions.each do |position| %>
         <li>
-          <%= "Name: " + @teams[:"#{@team_name}"][:"#{position}"] + ", Position: #{position}"
+          <%= "Name: " + TeamData::ROLL_CALL[:"#{@team_name}"][:"#{position}"] + ", Position: #{position}"
         %></li>
         <% end %>
     <a href="/teams">Back to Teams</a>

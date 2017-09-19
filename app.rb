@@ -2,7 +2,6 @@ require "sinatra"
 require_relative "models/player"
 require_relative "models/team"
 require_relative "models/team_data"
-require 'pry'
 
 set :bind, '0.0.0.0'  # bind to all interfaces
 
